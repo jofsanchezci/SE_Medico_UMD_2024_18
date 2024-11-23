@@ -8,6 +8,7 @@ base_conocimiento = [
     {"condiciones": ["fiebre alta", "tos persistente"], "diagnostico": "neumonía"},
     {"condiciones": ["dolor abdominal", "náuseas"], "diagnostico": "gastroenteritis"},
     {"condiciones": ["fiebre alta", "erupción cutánea"], "diagnostico": "sarampión"},
+    {"condiciones": ["dolor de cabeza", "tos persistente"], "diagnostico": "Maltrato"},
 ]
 
 # Motor de inferencia
