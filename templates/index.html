@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Experto Médico</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Sistema Experto Médico</h1>
+    <form method="POST">
+        <h2>Seleccione sus síntomas:</h2>
+        <label><input type="checkbox" name="sintomas" value="fiebre alta"> Fiebre alta</label><br>
+        <label><input type="checkbox" name="sintomas" value="dolor de cabeza"> Dolor de cabeza</label><br>
+        <label><input type="checkbox" name="sintomas" value="tos persistente"> Tos persistente</label><br>
+        <label><input type="checkbox" name="sintomas" value="dolor abdominal"> Dolor abdominal</label><br>
+        <label><input type="checkbox" name="sintomas" value="náuseas"> Náuseas</label><br>
+        <label><input type="checkbox" name="sintomas" value="erupción cutánea"> Erupción cutánea</label><br>
+        <button type="submit">Diagnosticar</button>
+    </form>
+
+    {% if diagnostico %}
+    <h2>Diagnóstico:</h2>
+    <p>{{ diagnostico }}</p>
+    {% endif %}
+</body>
+</html>
